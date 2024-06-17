@@ -1,0 +1,77 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: radial-gradient(#303b37, #1a1f1d);
+  color: #e1eeeb;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.challenges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.challenge-card {
+  background: #00bcd4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.challenge-card h3 {
+  margin: 0;
+}
+
+.challenge-card button {
+  margin-top: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #333; /* Change text color to dark */
+}
+
+.modal-content h2,
+.modal-content p {
+  color: #333; /* Change text color to dark */
+}
+
+.modal-content button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #00bcd4;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background: #0097a7;
+}
